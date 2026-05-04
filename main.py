@@ -90,3 +90,19 @@ green_button = tk.Button(
 green_button.place(x=410, y=280)
 
 root.mainloop()
+
+questions = [
+    {
+        "Question 1": "Are you ready for this test?",
+        "Answers": ["Yes", "No", "Maybe", "Did I win?"],
+        "Correct": "No"
+    },
+
+    {
+        "Question 2": "",
+        "Answers": [],
+        "Correct": " "
+
+    },
+
+]
