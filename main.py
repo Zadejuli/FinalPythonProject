@@ -205,9 +205,9 @@ questions = [
     },
 
     {
-        "Question 1": "Are you ready for this test?",
-        "Answers": ["Yes", "No", "Maybe", "Did I win?"],
-        "Correct": "No"
+        "Question 2": "",
+        "Answers": [],
+        "Correct": ""
 
     },
 
