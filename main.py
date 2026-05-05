@@ -1,5 +1,44 @@
 import tkinter as tk
 
+questions = [
+    {
+        "question": "Are you ready for this test?",
+        "answers": ["Yes", "No", "Maybe", "Did I win?"],
+        "correct": "No"
+    },
+
+    {
+        "question": 'Why was the answer for Question 1 "No?"',
+        "answers": ["Because", "No", "Its the opposite of Yes", "Donkey Kong"],
+        "correct": "Because"
+    },
+
+    {
+        "question": "Is the next question going to be the first REAL one?",
+        "answers": ["Yes", "Yes", "Yes", "Yes"],
+        "correct": "Yes"
+    },
+
+    {
+        "question": "What does GUI stand for?",
+        "answers": [
+            "Grape Under Ingot",
+            "Guacamole Universe Inside",
+            "Graphical User Interface",
+            "Graphicals Users Interfaces"
+        ],
+        "correct": "Graphical User Interface"
+    },
+
+{
+        "question": "There are Lists, Sets, and ______",
+        "answers": ["Banjos", "Toodles", "Tinkles", "Tuples"],
+        "correct": "Tuples"
+    },
+]
+
+current_question = 0
+
 root = tk.Tk()
 root.title("Impossible Quiz")
 root.geometry("900x600")
@@ -19,89 +58,98 @@ main_frame.place(relx=0.5, rely=0.5, anchor="center")
 
 question_label = tk.Label(
     main_frame,
-    text="Question Goes Here",
+    text="",
     font=("Arial", 22, "bold"),
     bg="#d9d9d9",
     fg="black",
     wraplength=600
 )
 
-question_label.place(x=5, y=25, anchor="center")
-
-
-question_label.place(relx=0.5, rely=0.45, anchor="center")
+question_label.place(relx=0.5, rely=0.51, anchor="center")
 
 button_font = ("Arial", 18, "bold")
 
+def load_question():
+    question = questions[current_question]
+
+    question_label.config(
+        text=question["question"]
+    )
+
+    answers = question["answers"]
+
+    red_button.config(text=answers[0])
+    blue_button.config(text=answers[1])
+    yellow_button.config(text=answers[2])
+    green_button.config(text=answers[3])
+
+def check_answer(answer):
+    global current_question
+
+    question = questions[current_question]
+
+    if answer == question["correct"]:
+        question_label.config(text="Correct")
+    else:
+        question_label.config(text="Wrong")
+
+    current_question += 1
+
+    if current_question < len(questions):
+        root.after(1000, load_question)
+
 red_button = tk.Button(
     main_frame,
-    text="Answer 1",
     bg="red",
     fg="black",
     font=button_font,
     width=18,
     height=5,
-    bd=5,
-    relief="raised"
+    wraplength=200,
+    command=lambda: check_answer(red_button["text"])
 )
 
 red_button.place(x=70, y=40)
 
 blue_button = tk.Button(
     main_frame,
-    text="Answer 2",
     bg="#00a2ff",
     fg="black",
     font=button_font,
     width=18,
     height=5,
-    bd=5,
-    relief="raised"
+    wraplength=200,
+    command=lambda: check_answer(blue_button["text"])
 )
 
 blue_button.place(x=410, y=40)
 
 yellow_button = tk.Button(
     main_frame,
-    text="Answer 3",
     bg="yellow",
     fg="black",
     font=button_font,
     width=18,
     height=5,
-    bd=5,
-    relief="raised"
+    wraplength=200,
+    command=lambda: check_answer(yellow_button["text"])
 )
 
 yellow_button.place(x=70, y=280)
 
 green_button = tk.Button(
     main_frame,
-    text="Answer 4",
     bg="green",
     fg="black",
     font=button_font,
     width=18,
     height=5,
-    bd=5,
-    relief="raised"
+    wraplength=200,
+    command=lambda: check_answer(green_button["text"])
 )
 
 green_button.place(x=410, y=280)
 
+load_question()
+
 root.mainloop()
-questions = [
-    {
-        "Question 1": "Are you ready for this test?",
-        "Answers": ["Yes", "No", "Maybe", "Did I win?"],
-        "Correct": "No"
-    },
-
-    {
-        "Question 2": "",
-        "Answers": [],
-        "Correct": " "
-
-    },
-
-]
