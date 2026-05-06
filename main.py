@@ -1,43 +1,71 @@
 import tkinter as tk
 
 questions = [
-    {
+{
         "question": "Are you ready for this test?",
         "answers": ["Yes", "No", "Maybe", "Did I win?"],
         "correct": "No"
     },
-
-    {
+{
         "question": 'Why was the answer for Question 1 "No?"',
         "answers": ["Because", "No", "Its the opposite of Yes", "Donkey Kong"],
         "correct": "Because"
     },
-
-    {
+{
         "question": "Is the next question going to be the first REAL one?",
         "answers": ["Yes", "Yes", "Yes", "Yes"],
         "correct": "Yes"
     },
-
-    {
+{
         "question": "What does GUI stand for?",
-        "answers": [
-            "Grape Under Ingot",
-            "Guacamole Universe Inside",
-            "Graphical User Interface",
-            "Graphicals Users Interfaces"
-        ],
+        "answers": ["Grape Under Ingot","Guacamole Universe Inside","Graphical User Interface","Graphicals Users Interfaces"],
         "correct": "Graphical User Interface"
     },
-
 {
         "question": "There are Lists, Sets, and ______",
         "answers": ["Banjos", "Toodles", "Tinkles", "Tuples"],
         "correct": "Tuples"
     },
+{
+        "question": "What color tie does Spongebob wear?",
+        "answers": ["Green", "Red", "Blue", "Pink"],
+        "correct": "Red"
+    },
+{
+        "question": "What does Mr. Krabs on the news in the first Spongebob movie?",
+        "answers": ["Hello, I like money.", "Hello, I'm a crab.", "Give me your money!", "I have a secret formula!"],
+        "correct": "Hello, I like money."
+    },
+{
+        "question": "How much wood could a woodchuck chuck if a woodchuck could chuck wood?",
+        "answers": ["IDK", "3 pounds", "700 pounds", "50 pounds"],
+        "correct": "700 pounds"
+    },
+{
+        "question": "Gobbling gorgoyles gobbled gobbling goblins",
+        "answers": ["Yeah! Thats what Im saying!", "Goggles", "Giggity", "What?"],
+        "correct": "Yeah! Thats what Im saying!"
+    },
+{
+        "question": "",
+        "answers": ["", "", "", ""],
+        "correct": ""
+    },
+{
+        "question": "",
+        "answers": ["", "", "", ""],
+        "correct": ""
+    },
+
+
+
+
+
 ]
 
 current_question = 0
+
+lives = 3
 
 root = tk.Tk()
 root.title("Impossible Quiz")
@@ -65,9 +93,19 @@ question_label = tk.Label(
     wraplength=600
 )
 
+lives_label = tk.Label(
+    main_frame,
+    text=f"Lives: {lives}",
+    font=("Arial", 16, "bold"),
+    bg="#d9d9d9",
+    fg="red"
+)
+
 question_label.place(relx=0.5, rely=0.51, anchor="center")
 
 button_font = ("Arial", 18, "bold")
+
+lives_label.place(x=10, y=0)
 
 def load_question():
     question = questions[current_question]
@@ -85,13 +123,28 @@ def load_question():
 
 def check_answer(answer):
     global current_question
+    global lives
 
     question = questions[current_question]
 
     if answer == question["correct"]:
         question_label.config(text="Correct")
     else:
+        lives -= 1
+
+        lives_label.config(
+            text=f"Lives: {lives}"
+
+
+        )
+
+
         question_label.config(text="Wrong")
+
+        if lives == 0:
+            print("SUPER F! YOU FAILED!")
+            root.after(1000, root.destroy)
+            return
 
     current_question += 1
 
