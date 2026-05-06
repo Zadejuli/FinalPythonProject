@@ -47,9 +47,14 @@ questions = [
         "correct": "Yeah! Thats what Im saying!"
     },
 {
-        "question": "",
-        "answers": ["", "", "", ""],
-        "correct": ""
+        "question": "How do you spells the teachers name?",
+        "answers": ["Bawn", "Bonn", "Bawn", "Baun"],
+        "correct": "Baun"
+    },
+{
+        "question": 'If Wario is evil Mario, why isnt Waluigi "Γuigi"',
+        "answers": ["Because hes purple",'Because Luigis name with the Japanese word warui, means "bad luigi"', "Because hes so evil", "Warioware"],
+        "correct": 'Because Luigis name with the Japanese word warui, means "bad Luigi"'
     },
 {
         "question": "",
