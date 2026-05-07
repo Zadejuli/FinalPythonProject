@@ -48,20 +48,69 @@ questions = [
     },
 {
         "question": "How do you spells the teachers name?",
-        "answers": ["Bawn", "Bonn", "Bawn", "Baun"],
+        "answers": ["Bawn", "Bonn", "Baan", "Baun"],
         "correct": "Baun"
     },
 {
         "question": 'If Wario is evil Mario, why isnt Waluigi "Γuigi"',
         "answers": ["Because hes purple",'Because Luigis name with the Japanese word warui, means "bad luigi"', "Because hes so evil", "Warioware"],
-        "correct": 'Because Luigis name with the Japanese word warui, means "bad Luigi"'
+        "correct": 'Because Luigis name with the Japanese word warui, means "bad luigi"'
+    },
+{
+        "question": "Click the one its pointing at",
+        "answers": ["↓", "its--↓", "↑", "↖"],
+        "correct": "↖"
+    },
+{
+        "question": "Who do you spend 5 nights with?",
+        "answers": ["Freddy", "Mr Peterson", "Baldi", "Nobody"],
+        "correct": "Freddy"
+    },
+{
+        "question": "How do you make a tissue dance? Put a little boogie in it!",
+        "answers": ["sooo funny", "hahahaha", "haha", "hahaha"],
+        "correct": "hahaha"
+    },
+{
+        "question": "Click Green",
+        "answers": ["Click Green", "Green", "Click Blue", "Blue"],
+        "correct": "Green"
+    },
+{
+        "question": "What does OOP stand for?",
+        "answers": ["Old Obtuse Pastry", "Original Obelisk Pothole", "Objecting Oriented Programmers", "Object Oriented Programming"],
+        "correct": "Object Oriented Programming"
+    },
+{
+        "question": "Homer dropped his _______ D'oh!",
+        "answers": ["GUI", "Donut", "Soda", "Doorway"],
+        "correct": "Donut"
+    },
+{
+        "question": "What Holiday is on November 16th?",
+        "answers": ["Spend Time With Your Family Day", "Not National Button Day", "International Check Your Wipers day", "Annual Eat A Live Turkey Day"],
+        "correct": ""
+    },
+{
+        "question": "How many holes in a polo?",
+        "answers": ["Two", "One", "Three", "Four"],
+        "correct": ""
+    },
+{
+        "question": "What is Mr Bauns room number?",
+        "answers": ["H205", "H206", "H203", "H20"],
+        "correct": ""
+    },
+{
+        "question": "Can a match box?",
+        "answers": ["No, but a tin can.", "No", "I'm sure they can!", "Yes"],
+        "correct": "No, but a tin can"
     },
 {
         "question": "",
         "answers": ["", "", "", ""],
         "correct": ""
     },
-
 
 
 
@@ -73,7 +122,7 @@ current_question = 0
 lives = 3
 
 root = tk.Tk()
-root.title("Impossible Quiz")
+root.title("The Awesome Quiz")
 root.geometry("900x600")
 root.configure(bg="black")
 root.resizable(False, False)
