@@ -53,8 +53,8 @@ questions = [
     },
 {
         "question": 'If Wario is evil Mario, why isnt Waluigi "Γuigi"',
-        "answers": ["Because hes purple",'Because Luigis name with the Japanese word warui, means "bad luigi"', "Because hes so evil", "Warioware"],
-        "correct": 'Because Luigis name with the Japanese word warui, means "bad luigi"'
+        "answers": ["Because hes purple",'Because warui, with Luigi, means "bad Luigi"', "Because hes so evil", "Warioware"],
+        "correct": 'Because warui, with Luigi, means "bad Luigi"'
     },
 {
         "question": "Click the one its pointing at",
@@ -89,22 +89,77 @@ questions = [
 {
         "question": "What Holiday is on November 16th?",
         "answers": ["Spend Time With Your Family Day", "Not National Button Day", "International Check Your Wipers day", "Annual Eat A Live Turkey Day"],
-        "correct": ""
+        "correct": "International Check Your Wipers day"
     },
 {
         "question": "How many holes in a polo?",
         "answers": ["Two", "One", "Three", "Four"],
-        "correct": ""
+        "correct": "Four"
     },
 {
         "question": "What is Mr Bauns room number?",
         "answers": ["H205", "H206", "H203", "H20"],
-        "correct": ""
+        "correct": "H205"
     },
 {
         "question": "Can a match box?",
-        "answers": ["No, but a tin can.", "No", "I'm sure they can!", "Yes"],
+        "answers": ["No, but a tin can", "No", "I'm sure they could!", "Yes"],
         "correct": "No, but a tin can"
+    },
+{
+        "question": "What game had the most concurrent players at one time?",
+        "answers": ["Fortnite", "PUBG", "Roblox - Steal a Brainrot", "Roblox - Grow a Garden"],
+        "correct": "Roblox - Steal a Brainrot"
+    },
+{
+        "question": "If Christmas is the 25th, and Halloween is the 31st, why isn't Thanksgiving?",
+        "answers": ["Thanksgiving what?", "Everyday!", "The 40st", "What"],
+        "correct": "The 40st"
+    },
+{
+        "question": "3000000(pi) + 2.63 x 999 - 8",
+        "answers": ["9427397.331", "1", "8399402.435", "0110100001101001"],
+        "correct": "9427397.331"
+    },
+{
+        "question": "Standing in Bauns room, and looking out the door, which way is the fire exit?",
+        "answers": ["Right then left", "Right", "Up", "Left"],
+        "correct": "Left"
+    },
+{
+        "question": "In the Spongebob movie, which quote is line 1492 in the transcript?",
+        "answers": ["Did you see my butt?", "Are you crazy? I was just gonna say that your fly is down!", "We’re on a baby hunt, and don’t think we don’t know how to weed ’em out.", "I’m ready. Depression. I’m ready. Depression."],
+        "correct": "Are you crazy? I was just gonna say that your fly is down!"
+    },
+{
+        "question": "Whats heavier, 1000 bricks or 1000 feathers?",
+        "answers": ["Bricks", "Feathers", "Equal", "Or"],
+        "correct": "Bricks"
+    },
+{
+        "question": "",
+        "answers": ["", "", "", ""],
+        "correct": ""
+    },
+{
+        "question": "",
+        "answers": ["", "", "", ""],
+        "correct": ""
+    },
+{
+        "question": "",
+        "answers": ["", "", "", ""],
+        "correct": ""
+    },
+{
+        "question": "",
+        "answers": ["", "", "", ""],
+        "correct": ""
+    },
+{
+        "question": "",
+        "answers": ["", "", "", ""],
+        "correct": ""
     },
 {
         "question": "",
