@@ -187,6 +187,26 @@ questions = [
         "correct": "Why?"
     },
 {
+        "question": "If a bird flies, and a cat walks, whats a fly?",
+        "answers": ["A fly", "A walk", "A thing", "An insect"],
+        "correct": "An insect"
+    },
+{
+        "question": "How many ants are there on earth?",
+        "answers": ["20 quadrillion", "18.5 million", "900 billion", "18"],
+        "correct": "20 quadrillion"
+    },
+{
+        "question": "Why did the waiter say 1+1 to the chef?",
+        "answers": ["Maybe there's one pie and another pie", "IDK", "Its actually a classroom", "Because 1+1 is stew!"],
+        "correct": "Because 1+1 is stew!"
+    },
+{
+        "question": "",
+        "answers": ["", "", "", ""],
+        "correct": ""
+    },
+{
         "question": "",
         "answers": ["", "", "", ""],
         "correct": ""
