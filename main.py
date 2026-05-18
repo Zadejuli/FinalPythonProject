@@ -4,152 +4,176 @@ questions = [
 {
         "question": "Are you ready for this test?",
         "answers": ["Yes", "No", "Maybe", "Did I win?"],
-        "correct": "No"
+        "correct": "No",
+        "hint": "Are you sure?"
     },
 {
         "question": 'Why was the answer for Question 1 "No?"',
         "answers": ["Because", "No", "Its the opposite of Yes", "Donkey Kong"],
-        "correct": "Because"
+        "correct": "Because",
+        "hint": "Because I said so."
     },
 {
         "question": "Is the next question going to be the first REAL one?",
         "answers": ["Yes", "Yes", "Yes", "Yes"],
-        "correct": "Yes"
+        "correct": "Yes",
+        "hint": "dude."
     },
 {
         "question": "What does GUI stand for?",
         "answers": ["Grape Under Ingot","Guacamole Universe Inside","Graphical User Interface","Graphicals Users Interfaces"],
-        "correct": "Graphical User Interface"
+        "correct": "Graphical User Interface",
+        "hint": "Read carefully."
     },
 {
         "question": "There are Lists, Sets, and ______",
-        "answers": ["Banjos", "Toodles", "Tinkles", "Tuples"],
-        "correct": "Tuples"
+        "answers": ["Tangos", "Toodles", "Tinkles", "Tuples"],
+        "correct": "Tuples",
+        "hint": "Starts with T and ends with S."
     },
 {
         "question": "What color tie does Spongebob wear?",
         "answers": ["Green", "Red", "Blue", "Pink"],
-        "correct": "Red"
+        "correct": "Red",
+        "hint": "Well, I don't think its green."
     },
 {
         "question": "What does Mr. Krabs on the news in the first Spongebob movie?",
         "answers": ["Hello, I like money.", "Hello, I'm a crab.", "Give me your money!", "I have a secret formula!"],
-        "correct": "Hello, I like money."
+        "correct": "Hello, I like money.",
+        "hint": "I mean, he does."
     },
 {
         "question": "How much wood could a woodchuck chuck if a woodchuck could chuck wood?",
         "answers": ["IDK", "3 pounds", "700 pounds", "50 pounds"],
-        "correct": "700 pounds"
+        "correct": "700 pounds",
+        "hint": "I am NOT lying this answer is true."
     },
 {
         "question": "Gobbling gorgoyles gobbled gobbling goblins",
         "answers": ["Yeah! Thats what Im saying!", "Goggles", "Giggity", "What?"],
-        "correct": "Yeah! Thats what Im saying!"
+        "correct": "Yeah! Thats what Im saying!",
+        "hint": "I mean, dude has a point."
     },
 {
         "question": "How do you spells the teachers name?",
         "answers": ["Bawn", "Bonn", "Baan", "Baun"],
-        "correct": "Baun"
+        "correct": "Baun",
+        "hint": "..."
     },
 {
-        "question": 'If Wario is evil Mario, why isnt Waluigi "Γuigi"',
-        "answers": ["Because hes purple",'Because warui, with Luigi, means "bad Luigi"', "Because hes so evil", "Warioware"],
-        "correct": 'Because warui, with Luigi, means "bad Luigi"'
+        "question": "How many nuclear bombs could Wario tank.",
+        "answers": ["500,000","None","1","Infinite"],
+        "correct": "Infinite",
+        "hint": "He's invincible."
     },
 {
         "question": "Click the one its pointing at",
         "answers": ["↓", "its--↓", "↑", "↖"],
-        "correct": "↖"
+        "correct": "↖",
+        "hint": "THINK."
     },
 {
         "question": "Who do you spend 5 nights with?",
         "answers": ["Freddy", "Mr Peterson", "Baldi", "Nobody"],
-        "correct": "Freddy"
+        "correct": "Freddy",
+        "hint": "scary bear!"
     },
 {
         "question": "How do you make a tissue dance? Put a little boogie in it!",
         "answers": ["sooo funny", "hahahaha", "haha", "hahaha"],
-        "correct": "hahaha"
+        "correct": "hahaha",
+        "hint": "DONT laugh too much or too little."
     },
 {
-        "question": "Click Green",
+        "question": 'Click "Green"',
         "answers": ["Click Green", "Green", "Click Blue", "Blue"],
-        "correct": "Green"
+        "correct": "Green",
+        "hint": "Its in quotes."
     },
 {
         "question": "What does OOP stand for?",
         "answers": ["Old Obtuse Pastry", "Original Obelisk Pothole", "Objecting Oriented Programmers", "Object Oriented Programming"],
-        "correct": "Object Oriented Programming"
+        "correct": "Object Oriented Programming",
+        "hint": "Read carefully."
     },
 {
         "question": "Homer dropped his _______ D'oh!",
         "answers": ["GUI", "Donut", "Soda", "Doorway"],
-        "correct": "Donut"
+        "correct": "Donut",
+        "hint": "mmmmm dooonutttt"
     },
 {
         "question": "What Holiday is on November 16th?",
         "answers": ["Spend Time With Your Family Day", "Not National Button Day", "International Check Your Wipers day", "Annual Eat A Live Turkey Day"],
-        "correct": "International Check Your Wipers day"
+        "correct": "International Check Your Wipers day",
+        "hint": "People at Willow Grove, PA (1509 Easton Rd) probably do this all the time."
     },
 {
         "question": "How many holes in a polo?",
         "answers": ["Two", "One", "Three", "Four"],
-        "correct": "Four"
+        "correct": "Four",
+        "hint": "The shirt."
     },
 {
         "question": "What is Mr Bauns room number?",
         "answers": ["H205", "H206", "H203", "H20"],
-        "correct": "H205"
+        "correct": "H205",
+        "hint": "Water x 5."
     },
 {
         "question": "Can a match box?",
         "answers": ["No, but a tin can", "No", "I'm sure they could!", "Yes"],
-        "correct": "No, but a tin can"
+        "correct": "No, but a tin can",
+        "hint": "Can it? CAN it?"
     },
 {
         "question": "What game had the most concurrent players at one time?",
         "answers": ["Fortnite", "PUBG", "Roblox - Steal a Brainrot", "Roblox - Grow a Garden"],
-        "correct": "Roblox - Steal a Brainrot"
+        "correct": "Roblox - Steal a Brainrot",
+        "hint": "This kind of surprised me, and at the same time did not."
     },
 {
         "question": "If Christmas is the 25th, and Halloween is the 31st, why isn't Thanksgiving?",
-        "answers": ["Thanksgiving what?", "Everyday!", "The 40st", "What"],
-        "correct": "The 40st"
+        "answers": ["Thanksgiving what?", "Everyday!", "The 40st", "Yeah"],
+        "correct": "The 40st",
+        "hint": "Is this a day? Can it be?"
     },
 {
         "question": "3000000(pi) + 2.63 x 999 - 8",
         "answers": ["9427397.331", "1", "8399402.435", "0110100001101001"],
-        "correct": "9427397.331"
+        "correct": "9427397.331",
+        "hint": "Its so easy, do it in your head. I mean, its fourth number is obviously a 7!"
     },
 {
         "question": "Standing in Bauns room, and looking out the door, which way is the fire exit?",
         "answers": ["Right then left", "Right", "Up", "Left"],
-        "correct": "Left"
+        "correct": "Left",
     },
 {
         "question": "In the Spongebob movie, which quote is line 1492 in the transcript?",
         "answers": ["Did you see my butt?", "Are you crazy? I was just gonna say that your fly is down!", "We’re on a baby hunt, and don’t think we don’t know how to weed ’em out.", "I’m ready. Depression. I’m ready. Depression."],
-        "correct": "Are you crazy? I was just gonna say that your fly is down!"
+        "correct": "Are you crazy? I was just gonna say that your fly is down!",
     },
 {
         "question": "Whats heavier, 1000 bricks or 1000 feathers?",
         "answers": ["Bricks", "Feathers", "Equal", "Or"],
-        "correct": "Bricks"
+        "correct": "Bricks",
     },
 {
         "question": "Which one of these is NOT a Python error?",
         "answers": ["SyntaxError", "TypeError", "PotatoError", "NameError"],
-        "correct": "PotatoError"
+        "correct": "PotatoError",
     },
 {
         "question": "You must pick the WRONG answer.",
-        "answers": ["2 + 2 = baby 2", "1 + 1 = Stew", "8 - 4 = 8", "2 + 2 = 4"],
-        "correct": "2 + 2 = 4"
+        "answers": ["2 + 2 = baby 2", "0 + 0 = 2", "8 - 4 = 8", "2 + 2 = 4"],
+        "correct": "2 + 2 = 4",
     },
 {
         "question": "The next question is generated by AI, will you be kind to its funny question?",
         "answers": ["Yeah", "No", "We will see", "Hopefully"],
-        "correct": "We will see"
+        "correct": "We will see",
     },
 {
         "question": "Which button would you press if your sandwich exploded?",
@@ -223,17 +247,33 @@ questions = [
 {
         "question": "What drink ruined Mr Bauns computer?",
         "answers": ["Pina Colada", "Pepsi", "Root Beer Float", "Water"],
-        "correct": ""
+        "correct": "Root Beer Float"
     },
 {
-        "question": "",
-        "answers": ["", "", "", ""],
-        "correct": ""
+        "question": "BE RESPECTFUL, BE RESPONSIBLE, BE ___",
+        "answers": ["ENVIOUS", "ENTITLED", "ENGAGING", "ENGAGED"],
+        "correct": "ENGAGED"
     },
-
-
-
-
+{
+        "question": "What is the name of Joey Majors made up character?",
+        "answers": ["Indiana Longnose", "Sally Slippydopple", "Rubert Ticklecopter", "Robby Radishorse"],
+        "correct": "Idiana Longnose"
+    },
+{
+        "question": "Page 83 of the PA drivers manual, whats the fine for a .10 to .159 blood alcohol concentration?",
+        "answers": ["$700 - $7,000", "$100 - $750", "$500 - $5,000", "Nothing"],
+        "correct": "$500 - $5,000"
+    },
+{
+        "question": "Are you ready? The next one is the last.",
+        "answers": ["Yes", "Did I win?", "No", "Maybe"],
+        "correct": "Yes"
+    },
+{
+        "question": "THE. SUPER. OMEGA. AWESOME. QUIZ.",
+        "answers": ["WIN BUTTON!", "END", "LOSE BUTTON!", "TSOAQ"],
+        "correct": "WIN BUTTON!"
+    },
 
 ]
 
@@ -315,6 +355,7 @@ def load_question():
     green_button.config(text=answers[3])
 
 def check_answer(answer):
+
     global current_question, lives
 
     question = questions[current_question]
@@ -335,6 +376,25 @@ def check_answer(answer):
 
     if current_question < len(questions):
         root.after(1000, load_question)
+
+def show_hint():
+    question = questions[current_question]
+
+    hint_popup = tk.Label(
+        root,
+        text=question["hint"],
+        font=("Arial", 16, "bold"),
+        bg="yellow",
+        fg="black",
+        relief="solid",
+        bd=3,
+        padx=20,
+        pady=10
+    )
+
+    hint_popup.place(relx=0.5, rely=0.125, anchor="center")
+
+    root.after(1000, hint_popup.destroy)
 
 red_button = tk.Button(
     main_frame,
@@ -384,5 +444,17 @@ red_button.place(x=70, y=40)
 blue_button.place(x=410, y=40)
 yellow_button.place(x=70, y=280)
 green_button.place(x=410, y=280)
+
+hint_button = tk.Button(
+    main_frame,
+    text="Hint",
+    font=("Arial", 16, "bold"),
+    bg="lightgray",
+    fg="black",
+    width=15,
+    command=show_hint
+)
+
+hint_button.place(relx=0.5, rely=0.96, anchor="center")
 
 root.mainloop()
