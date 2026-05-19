@@ -1,1 +1,3 @@
-hey baun im just making sure this works next one should be the real
+Welcome to my AWESOME quiz! 
+
+Its pretty simple, there are 50 questions of all different things. You must select the correct one, but be careful. You only have 3 lives.  There are four different options for each question, red, yellow, green, and blue. Choose the correct one, and you move on to the next. Get it wrong? FAIL. Get 3 wrong? SUPER F. You also have a hint button at your disposal, and there is a hint for every question. Though, the hints might not be that useful. Have fun, and good luck!
