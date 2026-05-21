@@ -1,5 +1,4 @@
 import tkinter as tk
-from PIL import Image, ImageTk
 
 questions = [
 {
@@ -215,76 +214,92 @@ questions = [
 {
         "question": "This next one might get ya messy!",
         "answers": ["Why?", "Okay", "What?", "I don't understand"],
-        "correct": "Why?"
+        "correct": "Why?",
+        "hint": "Why."
     },
 {
         "question": "Cause we're playin' bendy",
         "answers": ["Like the game?", "Huh?", "Why?", "The ink machine?"],
-        "correct": "Why?"
+        "correct": "Why?",
+        "hint": "Why."
     },
 {
         "question": "If a bird flies, and a cat walks, whats a fly?",
         "answers": ["A fly", "A walk", "A thing", "An insect"],
-        "correct": "An insect"
+        "correct": "A fly",
+        "hint": "Really? Come on. If it looks like a fly, looks like a fly, and looks like a fly, its probably..."
     },
 {
         "question": "How many ants are there on earth?",
         "answers": ["20 quadrillion", "18.5 million", "900 billion", "18"],
-        "correct": "20 quadrillion"
+        "correct": "20 quadrillion",
+        "hint": "I mean, there's a couple."
     },
 {
         "question": "Why did the waiter say 1+1 to the chef?",
         "answers": ["Maybe there's one pie and another pie", "IDK", "Its actually a classroom", "Because 1+1 is stew!"],
-        "correct": "Because 1+1 is stew!"
+        "correct": "Because 1+1 is stew!",
+        "hint": "Last I checked it was two."
     },
 {
         "question": "Which one sounds like a fake app?",
         "answers": ["TikTok", "Discord", "BlorboChat", "Spotify"],
-        "correct": "BlorboChat"
+        "correct": "BlorboChat",
+        "hint": "Yoooo I just messaged you on Blorbochat."
     },
 {       "question": "Mini Pekka",
         "answers": ["Butterfly", "Robot", "Pancake", "Fight"],
-        "correct": "Pancake"
+        "correct": "Pancake",
+        "hint": "In my opinion it sounds like he's saying “Ron Jeremy”."
     },
 {
         "question": "Which one of these is NOT a real Mario character?",
         "answers": ["Waluigi", "Toad", "Goombario", "Bingus"],
-        "correct": "Bingus"
+        "correct": "Bingus",
+        "hint": "Super Bingus Bros 3 is my favorite game ever."
     },
 {
         "question": "Is this quiz the most awesome ever?",
         "answers": ["Yeah", "No", "Sometimes", "NO WAY"],
-        "correct": "Sometimes"
+        "correct": "Sometimes",
+        "hint": "I will admit some of these are really stupid but some are oodles of fun."
     },
 {
         "question": "What drink ruined Mr Bauns computer?",
         "answers": ["Pina Colada", "Pepsi", "Root Beer Float", "Water"],
-        "correct": "Root Beer Float"
+        "correct": "Root Beer Float",
+        "hint": "Does it really?"
     },
 {
         "question": "BE RESPECTFUL, BE RESPONSIBLE, BE ___",
         "answers": ["ENVIOUS", "ENTITLED", "ENGAGING", "ENGAGED"],
-        "correct": "ENGAGED"
+        "correct": "ENGAGED",
+        "hint": "It plays EVERY SINGLE MORNING."
     },
 {
         "question": "What is the name of Joey Majors made up character?",
         "answers": ["Indiana Longnose", "Sally Slippydopple", "Rubert Ticklecopter", "Robby Radishorse"],
-        "correct": "Idiana Longnose"
+        "correct": "Indiana Longnose",
+        "hint": "I wonder if he'll also get 5 movies."
+
     },
 {
-        "question": "Page 83 of the PA drivers manual, whats the fine for a .10 to .159 blood alcohol concentration?",
+        "question": "Whats the fine for a .10 to .159 blood alcohol concentration?",
         "answers": ["$700 - $7,000", "$100 - $750", "$500 - $5,000", "Nothing"],
-        "correct": "$500 - $5,000"
+        "correct": "$500 - $5,000",
+        "hint": "GET OUT OF MY CAR NOW. Also its the same cost as like 3 cows probably."
     },
 {
-        "question": "Are you ready? The next one is the last.",
+        "question": "Are you ready? The next one is the last question.",
         "answers": ["Yes", "Did I win?", "No", "Maybe"],
-        "correct": "Yes"
+        "correct": "Yes",
+        "hint": "HYPE. HYPE. IM READY. IM READY."
     },
 {
         "question": "THE. SUPER. OMEGA. AWESOME. QUIZ.",
         "answers": ["WIN BUTTON!", "END", "LOSE BUTTON!", "TSOAQ"],
-        "correct": "WIN BUTTON!"
+        "correct": "WIN BUTTON!",
+        "hint": "Huhuhuhuh. Its totally the lose button. Huhuhuhuh."
     },
 
 ]
@@ -389,6 +404,9 @@ def check_answer(answer):
     if current_question < len(questions):
         root.after(1000, load_question)
 
+    else:
+        root.after(1000, show_ending)
+
 def show_hint():
     question = questions[current_question]
 
@@ -407,6 +425,20 @@ def show_hint():
     hint_popup.place(relx=0.5, rely=0.125, anchor="center")
 
     root.after(1000, hint_popup.destroy)
+
+def show_ending():
+
+    global ending_image
+
+    for widget in root.winfo_children():
+        widget.destroy()
+
+    ending_image = tk.PhotoImage(file="ending.png")
+
+    ending_label = tk.Label(root, image=ending_image)
+    ending_label.pack()
+
+    root.after(5000, root.destroy)
 
 red_button = tk.Button(
     main_frame,
